@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+</head>
+<body>
+result Page
+<a href="{% url 'home' %}">link to Home page</a>
+<br>
+<br>
+{{Key1}}<br>
+{{Key2}}<br>
+{{Key3}}<br>
+{{Key4}}<br>
+<br>
+<h3> this passage has total {{words_count}}</h3><br>
+{{Key5}}
+<h1> total count </h1>
+{{Key6}}
+
+{% for word,num in Key6 %}
+<h1>{{word}}::{{num}}</h1>
+{% endfor %}
+
+</body>
+</html>
